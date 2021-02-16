@@ -12,16 +12,10 @@
   </header>
   <div class="container">
     <script>
-      // オブジェクト.メソッド（'パラメータ'）;
-      //  日付を表示する
-      // 10+3とすると103という結果がでてくることに注意
-      var answer = 10 + 4;
-      document.write('10+3の結果は,'+ answer +'です。');
-
-      answer += 10;
-      answer ++;
-      answer --;
-      document.write(answer);  
+      var today = new Date();
+      var newyear = new Date(2021, 12, 31);
+      document.write(today);
+      document.write(newyear);  
     </script>
   </div>
 </body>
