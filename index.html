@@ -10,12 +10,15 @@
   <header>
     <h1>TODAY</h1>
   </header>
+
   <div class="container">
     <script>
       var today = new Date();
-      var newyear = new Date(2021, 12, 31);
-      document.write(today);
-      document.write(newyear);  
+      //getMonthメソッドは普通に使うとー１ 
+      var todayHtml = today.getFullYear()+ '/' + (today.getMonth()+1)
+      + '/'+today.getDate();
+      
+      document.write('<p class = "date">' + todayHtml + '</p>');
     </script>
   </div>
 </body>
